@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "style.css"/>
+
+</head>
+<body>
+    <h1>QUOTE GENERATOR</h1>
+    <div class="btn">
+    <button onclick="rand()" >CLICK TO GENERATE QUOTE</button>
+    <h3 id = "q" ></h3>
+</div>
+
+    <script>
+        let quotes = ["you are the best","you can do everything","never disheart yourself","keep trying","keep faith","you can do it","you can do it alone","stay strong",
+        "Stay positive.","Work hard.","Believe in yourself.","Never give up.","keep calm in trying things","success take time","Good things take time"];
+        function rand(){
+            q.innerText = quotes[Math.floor(Math.random()*quotes.length)];
+        }
+    </script>
+</body>
+</html>
